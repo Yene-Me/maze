@@ -10,7 +10,7 @@ function Cell(id, x, y, h, w, col) {
     this.HCost = 0;
     this.GCost = 0;
     this.FCost = 0;
-    this.isClose = false 
+    this.isClose = false;
 
 
     this.startPoint =
