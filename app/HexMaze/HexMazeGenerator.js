@@ -4,7 +4,7 @@ import Detector from 'Detector';
 
 let canvas = document.getElementById('myCanvas');
 let context = canvas.getContext('2d');
-let hexGrid = [];
+
 
 
 export default class HexMazeGenerator {
@@ -13,15 +13,16 @@ export default class HexMazeGenerator {
 
     }
 
-
     createHexGrid(num) {
+        let hexGrid = [];
         for (var index = 0; index < num; index++) {
-            hexGrid.push(new Hex(20, 0, 0));
+            hexGrid.push(new Hex(1, 0, 0));
         }
+        return hexGrid;
     }
 
 
-    drawHexGrid(num, pointx, pointy) {
+    drawHexGrid(num, pointx, pointy, hexGrid) {
         for (var y = 0; y < hexGrid.length; y++) {
             for (var x = 0; x < num; x++) {
                 hexGrid[y].hexData();
