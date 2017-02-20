@@ -1,0 +1,792 @@
+<Response timestamp="1484842256165">
+    <UpdateLobby success="true">
+        <Tabs sortBy="PRIZE_AMOUNT" sortOrder="ascending">
+            <Tab id="667" displayName="90 Ball" displayKey="BINGO_GAME_TYPE" defaultSelectedTab="false">
+                <FeaturedRooms displayName="All New!" numberOfRooms="2"/>
+            </Tab>
+            <Tab id="737" displayName="50 Ball" displayKey="BINGO_50_GAME_TYPE" defaultSelectedTab="false"/>
+            <Tab id="666" displayName="75/80 Ball" displayKey="BINGO_80_UK75_GAME_TYPE" defaultSelectedTab="false"/>
+            <Tab id="669" displayName="Live Caller Bingo" displayKey="LOBBY_GALA_LIVE_LABEL" defaultSelectedTab="false"/>
+            <Tab id="671" displayName="Specials" displayKey="LOBBY_SPECIALS_ROOMS_LABEL" defaultSelectedTab="false"/>
+            <Tab id="670" displayName="Hot Deals" displayKey="LOBBY_HOT_DEALS_LABEL" defaultSelectedTab="false"/>
+            <Tab id="668" displayName="All Rooms" displayKey="LOBBY_ALL_ROOMS_LABEL" defaultSelectedTab="false">
+                <FeaturedRooms displayName="Hot Picks!" numberOfRooms="2"/>
+            </Tab>
+        </Tabs>
+        <Game name="1980 Gala Coral" defaultRoom="false" displayName="1980" gameType="Bingo80" language="en" currency="GBP" hasSchedule="true" displayKey="1980" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/1980.png" cashStakesOnly="false" tabs="666,668" featurePriorityInTabs="0,0">
+            <State>
+                <BingoGame type="link" gameplayid="22383451760" timeleft="54" drawTime="2017-01-19T16:11:51Z" currency="GBP" cardprice="25" freeratio="1" stripPurchaseOnly="false" variantType="Bingo80" callRate="2500" callRateCategory="Standard" winAnimationDuration="5000" adminPurchaseOnly="false" numofusers="2" numOfBettingUsers="0" prizestotal="2500" maxcards="25" mincards="1" ticketname="Any Line &amp; House" lastGame="false">
+                    <CardPrices defaultPriceIndex="0">
+                        <CardPrice gbp="25" priceIndex="0" priceOrder="0"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="SingleLine" ordinal="1">
+                            <Amount gbp="714"/>
+                            <SplitAmount gbp="714"/>
+                        </Prize>
+                        <Prize id="2" key="House" ordinal="1">
+                            <Amount gbp="1786"/>
+                            <SplitAmount gbp="1786"/>
+                        </Prize>
+                        <Total gbp="2500"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="4000" mxn="60000" eur="3000" gbp="2500" dkk="22500" cad="4000" usd="3000" sek="30000" pen="10000" nok="27500" brl="11000" priceIndex="0"/>
+                    </PrizeTotals>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="1980 Gala Coral" gameType="Bingo80">
+                <Jackpot type="PROGRESSIVE" community="false" id="148" configID="206" incrementType="NIGHTLY" displayVersion="1" displayID="148:206:Thriller" autoPayment="false" totalJackpotAmount="500055" active="true" amount="500055" currency="GBP" name="Thriller">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="32" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Allsorts" defaultRoom="false" displayName="Allsorts" gameType="MultiVariant Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Allsorts" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/allsorts.png" tabs="666,667,668" featurePriorityInTabs="0,0,0">
+            <JackpotUpdate gameName="Allsorts" gameType="MultiVariant Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="1082" configID="34" incrementType="NIGHTLY" displayVersion="1" displayID="1082:34:The Exploder" autoPayment="false" totalJackpotAmount="6048033" active="true" amount="6048033" currency="GBP" name="The Exploder">
+                    <JackpotTriggers>
+                        <JackpotTrigger variantType="Bingo" mincardprice="1" threshold="33" type="MAIN"/>
+                        <JackpotTrigger variantType="BingoUK75" mincardprice="1" threshold="37" type="MAIN"/>
+                        <JackpotTrigger variantType="Pattern Bingo" threshold="37" id="7" mincardprice="1" type="MAIN"/>
+                        <JackpotTrigger variantType="Speed Bingo" mincardprice="1" threshold="33" type="MAIN"/>
+                        <JackpotTrigger variantType="Bingo80" threshold="32" id="105" mincardprice="1" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Big Banker Bingo Gala Coral" defaultRoom="false" displayName="Big Banker Bingo" gameType="Big Banker Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Big Banker Bingo" tabs="667,668" featurePriorityInTabs="2,3">
+            <JackpotUpdate gameName="Big Banker Bingo Gala Coral" gameType="Big Banker Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="451" configID="351" incrementType="NIGHTLY" displayVersion="1" displayID="451:351:Big Banker Jackpot" autoPayment="true" totalJackpotAmount="938647" active="true" amount="938647" currency="GBP" name="Big Banker Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="31" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Bingo Lotto" defaultRoom="false" displayName="Bingo Lotto" gameType="Bingo Lotto" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Bingo Lotto" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/bingolotto.png" tabs="737,667,668" featurePriorityInTabs="0,0,0">
+            <JackpotUpdate gameName="Bingo Lotto" gameType="Bingo Lotto">
+                <Jackpot type="PROGRESSIVE" community="false" id="490" configID="490" incrementType="SCROLLING" displayVersion="1" displayID="490:490:Bingo Lotto Jackpot" autoPayment="false" totalJackpotAmount="4559602" active="true" amount="4559602" currency="GBP" name="Bingo Lotto Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="6" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Bouncy Balls Bingo Gala Coral" defaultRoom="false" displayName="Bouncy Balls Bingo Gala Coral" gameType="Bouncy Balls Bingo" language="en" currency="GBP" hasSchedule="true" displayKey="Bouncy Balls Bingo" cashStakesOnly="false" tabs="737" featurePriorityInTabs="0">
+            <State>
+                <BingoGame type="link" gameplayid="22383451766" timeleft="24" drawTime="2017-01-19T16:11:21Z" currency="GBP" cardprice="50" freeratio="1" stripPurchaseOnly="false" variantType="Bouncy Balls Bingo" callRate="1750" callRateCategory="Speed" winAnimationDuration="2000" adminPurchaseOnly="false" numofusers="4" numOfBettingUsers="1" prizestotal="250" maxcards="1" mincards="1" ticketname="BBB Test 123" ticketDescription="BBB Test 123" lastGame="false">
+                    <CardPrices defaultPriceIndex="1">
+                        <CardPrice gbp="10" priceIndex="0" priceOrder="0"/>
+                        <CardPrice gbp="50" priceIndex="1" priceOrder="1"/>
+                        <CardPrice gbp="100" priceIndex="2" priceOrder="2"/>
+                        <CardPrice gbp="200" priceIndex="3" priceOrder="3"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="4Balls" ordinal="1">
+                            <Amount gbp="50"/>
+                            <SplitAmount gbp="50"/>
+                        </Prize>
+                        <FeaturePrize feature="Bouncy Balls Collection" rank="0">
+                            <Amount gbp="50"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="25" balance="Bouncy Balls Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="25" balance="Bouncy Balls Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <Total gbp="50"/>
+                    </Prizes>
+                    <Prizes priceIndex="1">
+                        <Prize id="1" key="4Balls" ordinal="1">
+                            <Amount gbp="250"/>
+                            <SplitAmount gbp="250"/>
+                        </Prize>
+                        <FeaturePrize feature="Bouncy Balls Collection" rank="0">
+                            <Amount gbp="250"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="125" balance="Bouncy Balls Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="125" balance="Bouncy Balls Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <Total gbp="250"/>
+                    </Prizes>
+                    <Prizes priceIndex="2">
+                        <Prize id="1" key="4Balls" ordinal="1">
+                            <Amount gbp="500"/>
+                            <SplitAmount gbp="500"/>
+                        </Prize>
+                        <FeaturePrize feature="Bouncy Balls Collection" rank="0">
+                            <Amount gbp="500"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="250" balance="Bouncy Balls Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="250" balance="Bouncy Balls Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <Total gbp="500"/>
+                    </Prizes>
+                    <Prizes priceIndex="3">
+                        <Prize id="1" key="4Balls" ordinal="1">
+                            <Amount gbp="1000"/>
+                            <SplitAmount gbp="1000"/>
+                        </Prize>
+                        <FeaturePrize feature="Bouncy Balls Collection" rank="0">
+                            <Amount gbp="1000"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="500" balance="Bouncy Balls Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="500" balance="Bouncy Balls Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <Total gbp="1000"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="75" mxn="1250" eur="50" gbp="50" dkk="450" cad="75" usd="50" sek="625" pen="200" nok="500" brl="225" priceIndex="0"/>
+                        <PrizeTotal aud="400" mxn="6500" eur="300" gbp="250" dkk="2125" cad="400" usd="300" sek="3000" pen="1050" nok="2500" brl="1050" priceIndex="1"/>
+                        <PrizeTotal aud="850" mxn="13000" eur="600" gbp="500" dkk="4500" cad="850" usd="600" sek="6000" pen="2100" nok="5500" brl="2150" priceIndex="2"/>
+                        <PrizeTotal aud="1650" mxn="25500" eur="1200" gbp="1000" dkk="8500" cad="1700" usd="1250" sek="11500" pen="4150" nok="10500" brl="4250" priceIndex="3"/>
+                    </PrizeTotals>
+                    <Features>
+                        <Feature feature="Bouncy Balls Collection" featureType="GAMEVARIANT" variantType="Bouncy Balls Bingo"/>
+                    </Features>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="Bouncy Balls Bingo Gala Coral" gameType="Bouncy Balls Bingo">
+                <Jackpot type="PROGRESSIVE" community="true" id="8503" configID="493" incrementType="SCROLLING" displayVersion="1" displayID="8503:493:Bouncy Balls Jackpot" autoPayment="true" totalJackpotAmount="50700" active="true" amount="50700" currency="GBP" name="Bouncy Balls Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" threshold="18" type="COMMUNITY"/>
+                        <JackpotTrigger numberOfTickets="1" threshold="18" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Breakfast Club Gala Coral" defaultRoom="false" displayName="Breakfast Club" gameType="Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Breakfast Club Gala" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="Breakfast Club Gala Coral" gameType="Bingo">
+                <Jackpot type="PROGRESSIVE" community="true" id="8375" configID="464008" incrementType="NIGHTLY" displayVersion="1" displayID="8375:464008:Escalator" autoPayment="true" totalJackpotAmount="10008" active="true" amount="10008" currency="GBP" name="90 Eggsploder">
+                    <JackpotTriggers>
+                        <JackpotTrigger initialThreshold="35" mincardprice="1" targetDate="2017-01-13T10:45:00Z" period.postTargetDate="1_HOURS" period.preTargetDate="1_HOURS" increment.preTargetDate="5" startDate.postTargetDate="2017-01-13T10:50:00Z" threshold="90" startDate="2017-01-13T06:00:00Z" increment.postTargetDate="35" maximumThreshold="90" type="MAIN"/>
+                        <JackpotTrigger initialThreshold="35" mincardprice="1" numberOfTickets="1" targetDate="2017-01-13T10:45:00Z" period.postTargetDate="1_HOURS" period.preTargetDate="1_HOURS" increment.preTargetDate="5" startDate.postTargetDate="2017-01-13T10:50:00Z" threshold="90" startDate="2017-01-13T06:00:00Z" increment.postTargetDate="35" maximumThreshold="90" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Cash Cubes Bingo Gala Coral" defaultRoom="false" displayName="Cash Cubes Bingo" gameType="Cash Cubes Bingo" language="en" currency="GBP" hasSchedule="true" displayKey="Cash Cubes Bingo" cashStakesOnly="false" tabs="737,666,667,668" featurePriorityInTabs="0,0,0,0">
+            <State>
+                <BingoGame type="link" gameplayid="22383451768" timeleft="69" drawTime="2017-01-19T16:12:06Z" currency="GBP" cardprice="50" freeratio="1" stripPurchaseOnly="false" variantType="Cash Cubes Bingo" callRate="1750" callRateCategory="Speed" winAnimationDuration="2000" adminPurchaseOnly="false" numofusers="1" numOfBettingUsers="0" prizestotal="2500" maxcards="1" mincards="1" ticketname="Cash Cubes" scheduleKey="CC7" lastGame="false">
+                    <CardPrices defaultPriceIndex="1">
+                        <CardPrice gbp="10" priceIndex="0" priceOrder="0"/>
+                        <CardPrice gbp="50" priceIndex="1" priceOrder="1"/>
+                        <CardPrice gbp="100" priceIndex="2" priceOrder="2"/>
+                        <CardPrice gbp="200" priceIndex="3" priceOrder="3"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="4Cubes" ordinal="1">
+                            <Amount gbp="500"/>
+                            <SplitAmount gbp="500"/>
+                        </Prize>
+                        <FeaturePrize feature="Cash Cubes Collection" rank="0">
+                            <Amount gbp="50"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="25" balance="Cash Cubes Slot Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="25" balance="Cash Cubes Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <Total gbp="500"/>
+                    </Prizes>
+                    <Prizes priceIndex="1">
+                        <Prize id="1" key="4Cubes" ordinal="1">
+                            <Amount gbp="2500"/>
+                            <SplitAmount gbp="2500"/>
+                        </Prize>
+                        <FeaturePrize feature="Cash Cubes Collection" rank="0">
+                            <Amount gbp="250"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="125" balance="Cash Cubes Slot Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="125" balance="Cash Cubes Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <Total gbp="2500"/>
+                    </Prizes>
+                    <Prizes priceIndex="2">
+                        <Prize id="1" key="4Cubes" ordinal="1">
+                            <Amount gbp="5000"/>
+                            <SplitAmount gbp="5000"/>
+                        </Prize>
+                        <FeaturePrize feature="Cash Cubes Collection" rank="0">
+                            <Amount gbp="500"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="250" balance="Cash Cubes Slot Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="250" balance="Cash Cubes Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <Total gbp="5000"/>
+                    </Prizes>
+                    <Prizes priceIndex="3">
+                        <Prize id="1" key="4Cubes" ordinal="1">
+                            <Amount gbp="10000"/>
+                            <SplitAmount gbp="10000"/>
+                        </Prize>
+                        <FeaturePrize feature="Cash Cubes Collection" rank="0">
+                            <Amount gbp="1000"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="500" balance="Cash Cubes Slot Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="500" balance="Cash Cubes Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <Total gbp="10000"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="750" mxn="12500" eur="500" gbp="500" dkk="4500" cad="750" usd="500" sek="6250" pen="2000" nok="5000" brl="2250" priceIndex="0"/>
+                        <PrizeTotal aud="4000" mxn="65000" eur="3000" gbp="2500" dkk="21250" cad="4000" usd="3000" sek="30000" pen="10500" nok="25000" brl="10500" priceIndex="1"/>
+                        <PrizeTotal aud="8500" mxn="130000" eur="6000" gbp="5000" dkk="45000" cad="8500" usd="6000" sek="60000" pen="21000" nok="55000" brl="21500" priceIndex="2"/>
+                        <PrizeTotal aud="16500" mxn="255000" eur="12000" gbp="10000" dkk="85000" cad="17000" usd="12500" sek="115000" pen="41500" nok="105000" brl="42500" priceIndex="3"/>
+                    </PrizeTotals>
+                    <Features>
+                        <Feature feature="Cash Cubes Collection" featureType="GAMEVARIANT" variantType="Cash Cubes Bingo"/>
+                    </Features>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="Cash Cubes Bingo Gala Coral" gameType="Cash Cubes Bingo">
+                <Jackpot type="PROGRESSIVE" community="true" id="8363" configID="493" incrementType="SCROLLING" displayVersion="1" displayID="8363:493:Cash Cubes Jackpot" autoPayment="true" totalJackpotAmount="66716" active="true" amount="66716" currency="GBP" name="Cash Cubes Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" threshold="18" type="COMMUNITY"/>
+                        <JackpotTrigger numberOfTickets="1" threshold="18" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Castle" defaultRoom="false" displayName="Castle" gameType="Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Castle" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/castle.png" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="Castle" gameType="Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="1118" configID="206" incrementType="SCROLLING" displayVersion="1" displayID="Gala Cash Climber JP" autoPayment="true" totalJackpotAmount="799440" active="true" amount="799440" currency="GBP" name="Cash Climber">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="32" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="City" defaultRoom="true" displayName="City" gameType="Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="City" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/city.png" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="City" gameType="Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="1118" configID="206" incrementType="SCROLLING" displayVersion="1" displayID="Gala Cash Climber JP" autoPayment="true" totalJackpotAmount="799440" active="true" amount="799440" currency="GBP" name="Cash Climber">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="32" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Coconut Island" defaultRoom="false" displayName="Coconut Island" gameType="Bingo50" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Coconut Island" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/coconutisland.png" tabs="737,668" featurePriorityInTabs="0,2">
+            <JackpotUpdate gameName="Coconut Island" gameType="Bingo50">
+                <Jackpot type="PROGRESSIVE" community="false" id="44" configID="50" incrementType="NIGHTLY" displayVersion="1" displayID="44:50:Treasure Chest" autoPayment="true" totalJackpotAmount="169415" active="true" amount="169415" currency="GBP" name="Treasure Chest">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="15" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FIXED_AMOUNT" community="false" id="95" configID="350" incrementType="NONE" displayVersion="1" displayID="7229:350:Gala 50 Ball Jackpot" autoPayment="true" totalJackpotAmount="10000" active="true" amount="10000" currency="GBP" name="Oyster Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="18" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Coronation Street Bingo" defaultRoom="false" displayName="Coronation Street Bingo" gameType="Corrie Bingo" language="en" currency="GBP" hasSchedule="true" displayKey="Coronation Street Bingo" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/corrie.png" cashStakesOnly="false" tabs="667,668" featurePriorityInTabs="1,1">
+            <State>
+                <BingoGame type="normal" gameplayid="22383449769" timeleft="69" drawTime="2017-01-19T16:12:06Z" currency="GBP" cardprice="5" freeratio="1" stripPurchaseOnly="false" variantType="Corrie Bingo" callRate="3500" callRateCategory="Standard" winAnimationDuration="5000" adminPurchaseOnly="false" numofusers="0" numOfBettingUsers="0" prizestotal="5000" maxcards="48" mincards="1" ticketname="Audrey&apos;s Bingo" ticketDescription="Audrey&apos;s Bingo" scheduleKey="corriebingo" lastGame="false">
+                    <CardPrices defaultPriceIndex="0">
+                        <CardPrice gbp="5" priceIndex="0" priceOrder="0"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="1Line" ordinal="1">
+                            <Amount gbp="1000"/>
+                            <SplitAmount gbp="1000"/>
+                        </Prize>
+                        <Prize id="2" key="2Line" ordinal="1">
+                            <Amount gbp="1500"/>
+                            <SplitAmount gbp="1500"/>
+                        </Prize>
+                        <Prize id="3" key="House" ordinal="1">
+                            <Amount gbp="2500"/>
+                            <SplitAmount gbp="2500"/>
+                        </Prize>
+                        <Total gbp="5000"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="8000" mxn="125000" eur="6000" gbp="5000" dkk="40000" cad="8000" usd="6000" sek="60000" pen="20000" nok="50000" brl="20000" priceIndex="0"/>
+                    </PrizeTotals>
+                    <Features>
+                        <Feature feature="Corrie Bingo" featureType="GAMEVARIANT" variantType="Corrie Bingo"/>
+                    </Features>
+                    <FeatureStates>
+                        <FeatureState id="Corrie Bingo">
+                            <Param key="patternSetID" value="Bingo"/>
+                            <Param key="cardId" value="1842146"/>
+                            <Param key="card" value="9,21,56,74,85,35,41,58,67,77,18,28,37,48,86"/>
+                            <Param key="numbersCalled" value="86,74,41,28,85,58,18,67,56,48,77"/>
+                            <Param key="prizesWon" value=""/>
+                        </FeatureState>
+                    </FeatureStates>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="Coronation Street Bingo" gameType="Corrie Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="334" configID="13" incrementType="SCROLLING" displayVersion="1" displayID="334:13:Corrie Jackpot" autoPayment="true" totalJackpotAmount="2796877" active="true" amount="2796877" currency="GBP" name="Corrie Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="31" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FIXED_AMOUNT" community="false" id="7237" configID="138001" incrementType="NONE" displayVersion="1" displayID="7237:138001:Coronation Street Bingo Jackpot" autoPayment="true" totalJackpotAmount="500" active="true" featureID="Corrie Bingo" amount="500" currency="GBP" name="Any Number">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberMatch="true" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="false" id="7238" configID="138002" incrementType="SCROLLING" displayVersion="1" displayID="7238:138002:Coronation Street Bingo Jackpot" autoPayment="true" totalJackpotAmount="7348" allocationID="1" active="true" featureID="Corrie Bingo" amount="7348" currency="GBP" name="Coronation Street Cobbled Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger prizeKey="1Line" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="false" id="7238" configID="138002" incrementType="SCROLLING" displayVersion="1" displayID="7238:138002:Coronation Street Bingo Jackpot" autoPayment="true" totalJackpotAmount="22044" allocationID="2" active="true" featureID="Corrie Bingo" amount="22044" currency="GBP" name="Coronation Street Cobbled Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger prizeKey="2Line" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="false" id="7238" configID="138002" incrementType="SCROLLING" displayVersion="1" displayID="7238:138002:Coronation Street Bingo Jackpot" autoPayment="true" totalJackpotAmount="44087" allocationID="3" active="true" featureID="Corrie Bingo" amount="44087" currency="GBP" name="Coronation Street Cobbled Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger prizeKey="House" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Country" defaultRoom="false" displayName="Country" gameType="Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Country" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/country.png" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="Country" gameType="Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="1118" configID="206" incrementType="SCROLLING" displayVersion="1" displayID="Gala Cash Climber JP" autoPayment="true" totalJackpotAmount="799440" active="true" amount="799440" currency="GBP" name="Cash Climber">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="32" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="DOND Bingo Gala Coral" defaultRoom="false" displayName="Deal or No Deal Bingo" gameType="Deal Or No Deal Bingo" language="en" currency="GBP" hasSchedule="true" displayKey="DOND Bingo" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/dondbingo.png" cashStakesOnly="false" tabs="667,668" featurePriorityInTabs="0,0">
+            <State>
+                <BingoGame type="link" gameplayid="22383449767" timeleft="69" drawTime="2017-01-19T16:12:06Z" currency="GBP" cardprice="10" freeratio="1" stripPurchaseOnly="false" variantType="Deal Or No Deal Bingo" callRate="3500" callRateCategory="Standard" winAnimationDuration="5000" adminPurchaseOnly="false" numofusers="0" numOfBettingUsers="0" prizestotal="10000" maxcards="60" mincards="1" ticketname="Deal or No Deal" lastGame="false">
+                    <CardPrices defaultPriceIndex="0">
+                        <CardPrice gbp="10" priceIndex="0" priceOrder="0"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="1Line" ordinal="1">
+                            <Amount gbp="1228"/>
+                            <SplitAmount gbp="1228"/>
+                        </Prize>
+                        <Prize id="2" key="2Line" ordinal="1">
+                            <Amount gbp="2631"/>
+                            <SplitAmount gbp="2631"/>
+                        </Prize>
+                        <Prize id="3" key="House" ordinal="1">
+                            <Amount gbp="6141"/>
+                            <SplitAmount gbp="6141"/>
+                        </Prize>
+                        <Total gbp="10000"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="15000" mxn="250000" eur="10000" gbp="10000" dkk="90000" cad="15000" usd="10000" sek="125000" pen="40000" nok="100000" brl="45000" priceIndex="0"/>
+                    </PrizeTotals>
+                    <Features>
+                        <Feature feature="Deal Or No Deal Bingo" featureType="GAMEVARIANT" variantType="Deal Or No Deal Bingo"/>
+                    </Features>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="DOND Bingo Gala Coral" gameType="Deal Or No Deal Bingo">
+                <Jackpot type="PROGRESSIVE" community="true" id="5531" configID="42" incrementType="NIGHTLY" displayVersion="1" displayID="5531:42:Jackpot" autoPayment="true" totalJackpotAmount="2303599" active="true" amount="2303599" currency="GBP" name="Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="31" type="MAIN"/>
+                        <JackpotTrigger mincardprice="1" numberOfTickets="1" threshold="31" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="DOND Bingo 75 Gala Coral" defaultRoom="false" displayName="Deal or No Deal Bingo 75" gameType="Deal Or No Deal Bingo 75" language="en" currency="GBP" hasSchedule="true" displayKey="DOND Bingo 75" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/dondbingo75.png" cashStakesOnly="false" tabs="666,668" featurePriorityInTabs="0,0">
+            <State>
+                <BingoGame type="link" gameplayid="22383451774" timeleft="249" drawTime="2017-01-19T16:15:06Z" currency="GBP" cardprice="15" freeratio="1" stripPurchaseOnly="false" variantType="Deal Or No Deal Bingo 75" callRate="3500" callRateCategory="Standard" winAnimationDuration="5000" adminPurchaseOnly="false" numofusers="0" numOfBettingUsers="0" prizestotal="7500" maxcards="45" mincards="1" ticketname="Deal or No Deal" scheduleKey="Deal or No Deal 15p 75GBP" lastGame="false">
+                    <CardPrices defaultPriceIndex="0">
+                        <CardPrice gbp="15" priceIndex="0" priceOrder="0"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="1Line" ordinal="1">
+                            <Amount gbp="433"/>
+                            <SplitAmount gbp="433"/>
+                        </Prize>
+                        <Prize id="2" key="2Line" ordinal="1">
+                            <Amount gbp="1010"/>
+                            <SplitAmount gbp="1010"/>
+                        </Prize>
+                        <Prize id="3" key="3Line" ordinal="1">
+                            <Amount gbp="1442"/>
+                            <SplitAmount gbp="1442"/>
+                        </Prize>
+                        <Prize id="4" key="4Line" ordinal="1">
+                            <Amount gbp="2019"/>
+                            <SplitAmount gbp="2019"/>
+                        </Prize>
+                        <Prize id="5" key="5Line" ordinal="1">
+                            <Amount gbp="2596"/>
+                            <SplitAmount gbp="2596"/>
+                        </Prize>
+                        <Total gbp="7500"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="12500" mxn="187500" eur="10000" gbp="7500" dkk="62500" cad="12500" usd="10000" sek="87500" pen="30000" nok="75000" brl="30000" priceIndex="0"/>
+                    </PrizeTotals>
+                    <Features>
+                        <Feature feature="Deal Or No Deal Bingo 75" featureType="GAMEVARIANT" variantType="Deal Or No Deal Bingo 75"/>
+                    </Features>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="DOND Bingo 75 Gala Coral" gameType="Deal Or No Deal Bingo 75">
+                <Jackpot type="PROGRESSIVE" community="true" id="6050" configID="87" incrementType="NIGHTLY" displayVersion="1" displayID="6050:87:Jackpot 75" autoPayment="true" totalJackpotAmount="929990" active="true" amount="929990" currency="GBP" name="Jackpot 75">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" numberOfTickets="1" threshold="42" type="COMMUNITY"/>
+                        <JackpotTrigger mincardprice="1" threshold="42" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Emmerdale Bingo Gala Coral" defaultRoom="false" displayName="Emmerdale Bingo" gameType="Emmerdale Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Emmerdale Bingo Gala Coral" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="Emmerdale Bingo Gala Coral" gameType="Emmerdale Bingo">
+                <Jackpot type="FEATURE" community="true" id="143" configID="321" incrementType="SCROLLING" displayVersion="1" displayID="143:321:Woolpack" autoPayment="true" totalJackpotAmount="14509" active="true" amount="14509" currency="GBP" name="Woolpack">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" target="20" type="MAIN"/>
+                        <JackpotTrigger numberOfTickets="1" target="20" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="true" id="144" configID="322" incrementType="SCROLLING" displayVersion="1" displayID="144:322:Vets" autoPayment="true" totalJackpotAmount="12315" active="true" amount="12315" currency="GBP" name="Vets">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" target="40" type="MAIN"/>
+                        <JackpotTrigger numberOfTickets="1" target="40" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="true" id="145" configID="323" incrementType="SCROLLING" displayVersion="1" displayID="145:323:Café Main Street" autoPayment="true" totalJackpotAmount="12623" active="true" amount="12623" currency="GBP" name="Café Main Street">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" target="60" type="MAIN"/>
+                        <JackpotTrigger numberOfTickets="1" target="60" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="true" id="146" configID="324" incrementType="SCROLLING" displayVersion="1" displayID="146:324:The Grange B&amp;B" autoPayment="true" totalJackpotAmount="12555" active="true" amount="12555" currency="GBP" name="The Grange B&amp;B">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" target="80" type="MAIN"/>
+                        <JackpotTrigger numberOfTickets="1" target="80" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="false" id="147" configID="325" incrementType="SCROLLING" displayVersion="1" displayID="147:325:Dingles Garage" autoPayment="true" totalJackpotAmount="18090" active="true" amount="18090" currency="GBP" name="Dingles Garage">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" target="90" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Interstate 75 Gala Coral" defaultRoom="false" displayName="Interstate 75" gameType="BingoUK75" language="en" currency="GBP" hasSchedule="true" displayKey="Interstate 75" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/interstate75.png" cashStakesOnly="false" tabs="666,668" featurePriorityInTabs="0,0">
+            <State>
+                <BingoGame type="link" gameplayid="22383451763" timeleft="159" drawTime="2017-01-19T16:13:36Z" currency="GBP" cardprice="15" freeratio="1" stripPurchaseOnly="false" variantType="BingoUK75" callRate="3500" callRateCategory="Standard" winAnimationDuration="5000" adminPurchaseOnly="false" numofusers="0" numOfBettingUsers="0" prizestotal="5000" maxcards="12" mincards="1" ticketname="Equal Playing Field" lastGame="false">
+                    <CardPrices defaultPriceIndex="0">
+                        <CardPrice gbp="15" priceIndex="0" priceOrder="0"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="1Line" ordinal="1">
+                            <Amount gbp="357"/>
+                            <SplitAmount gbp="357"/>
+                        </Prize>
+                        <Prize id="2" key="2Line" ordinal="1">
+                            <Amount gbp="714"/>
+                            <SplitAmount gbp="714"/>
+                        </Prize>
+                        <Prize id="3" key="3Line" ordinal="1">
+                            <Amount gbp="929"/>
+                            <SplitAmount gbp="929"/>
+                        </Prize>
+                        <Prize id="4" key="4Line" ordinal="1">
+                            <Amount gbp="1286"/>
+                            <SplitAmount gbp="1286"/>
+                        </Prize>
+                        <Prize id="5" key="5Line" ordinal="1">
+                            <Amount gbp="1714"/>
+                            <SplitAmount gbp="1714"/>
+                        </Prize>
+                        <Total gbp="5000"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="8333" mxn="125000" eur="6667" gbp="5000" dkk="41667" cad="8333" usd="6667" sek="58333" pen="20000" nok="50000" brl="20000" priceIndex="0"/>
+                    </PrizeTotals>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="Interstate 75 Gala Coral" gameType="BingoUK75">
+                <Jackpot type="PROGRESSIVE" community="false" id="110" configID="21" incrementType="NIGHTLY" displayVersion="1" displayID="110:21:Accumulator" autoPayment="false" totalJackpotAmount="3000421" active="true" amount="3000421" currency="GBP" name="Accumulator">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="42" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Metropolis" defaultRoom="false" displayName="Metropolis" gameType="Bingo" language="en" currency="GBP" hasSchedule="true" displayKey="Metropolis" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/metropolis.png" cashStakesOnly="false" tabs="667,668" featurePriorityInTabs="0,0">
+            <State>
+                <BingoGame type="link" gameplayid="22383449771" timeleft="69" drawTime="2017-01-19T16:12:06Z" currency="GBP" cardprice="25" freeratio="1" stripPurchaseOnly="false" variantType="Bingo" callRate="3500" callRateCategory="Standard" winAnimationDuration="5000" adminPurchaseOnly="false" numofusers="0" numOfBettingUsers="0" prizestotal="150000" maxcards="72" mincards="1" ticketname="1TG Bingo" scheduleKey="FRI1818" lastGame="false">
+                    <CardPrices defaultPriceIndex="0">
+                        <CardPrice gbp="25" priceIndex="0" priceOrder="0"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="1Line" ordinal="1">
+                            <Amount gbp="22000"/>
+                            <SplitAmount gbp="22000"/>
+                        </Prize>
+                        <Prize id="2" key="2Line" ordinal="1">
+                            <Amount gbp="38000"/>
+                            <SplitAmount gbp="38000"/>
+                        </Prize>
+                        <Prize id="3" key="House" ordinal="1">
+                            <Amount gbp="65000"/>
+                            <SplitAmount gbp="65000"/>
+                        </Prize>
+                        <FeaturePrize feature="1 To Go" rank="0">
+                            <Amount gbp="25000"/>
+                        </FeaturePrize>
+                        <Total gbp="150000"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="240000" mxn="3600000" eur="180000" gbp="150000" dkk="1350000" cad="240000" usd="180000" sek="1800000" pen="600000" nok="1650000" brl="660000" priceIndex="0"/>
+                    </PrizeTotals>
+                    <Features>
+                        <Feature feature="1 To Go" featureType="GAMEPRIZE"/>
+                    </Features>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="Metropolis" gameType="Bingo">
+                <Jackpot type="PROGRESSIVE" community="true" id="3" configID="150" incrementType="NIGHTLY" displayVersion="1" displayID="3:150:Megapot" autoPayment="true" totalJackpotAmount="8380333" active="true" amount="8380333" currency="GBP" name="Megapot">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" numberOfTickets="1" threshold="29" type="COMMUNITY"/>
+                        <JackpotTrigger mincardprice="1" threshold="29" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Mountain" defaultRoom="false" displayName="Mountain" gameType="Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Mountain" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/mountain.png" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="Mountain" gameType="Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="1118" configID="206" incrementType="SCROLLING" displayVersion="1" displayID="Gala Cash Climber JP" autoPayment="true" totalJackpotAmount="799440" active="true" amount="799440" currency="GBP" name="Cash Climber">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="32" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Phoenix" defaultRoom="false" displayName="Phoenix" gameType="Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Phoenix" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/phoenix.png" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="Phoenix" gameType="Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="1118" configID="206" incrementType="SCROLLING" displayVersion="1" displayID="Gala Cash Climber JP" autoPayment="true" totalJackpotAmount="799440" active="true" amount="799440" currency="GBP" name="Cash Climber">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="32" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="RR Bingo Gala Coral" defaultRoom="false" displayName="Rainbow Riches Bingo" gameType="Rainbow Riches Bingo" language="en" currency="GBP" hasSchedule="true" displayKey="RR Bingo" cashStakesOnly="false" tabs="737,667,668" featurePriorityInTabs="0,0,0">
+            <State>
+                <BingoGame type="link" gameplayid="22383449776" timeleft="69" drawTime="2017-01-19T16:12:06Z" currency="GBP" cardprice="15" freeratio="1" stripPurchaseOnly="false" variantType="Rainbow Riches Bingo" callRate="3000" callRateCategory="Standard" winAnimationDuration="5000" adminPurchaseOnly="false" numofusers="0" numOfBettingUsers="0" prizestotal="6500" maxcards="50" mincards="1" ticketname="A Touch of Green 2TG" scheduleKey="ATOG2TG" lastGame="false">
+                    <CardPrices defaultPriceIndex="0">
+                        <CardPrice gbp="15" priceIndex="0" priceOrder="0"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="Clover1" ordinal="1">
+                            <Amount gbp="1500"/>
+                            <SplitAmount gbp="1500"/>
+                        </Prize>
+                        <Prize id="2" key="House" ordinal="1">
+                            <Amount gbp="3500"/>
+                            <SplitAmount gbp="3500"/>
+                        </Prize>
+                        <FeaturePrize feature="Wishing Well" rank="0">
+                            <Amount gbp="500"/>
+                            <AmountBreakdown>
+                                <AmountByAccountType gbp="250" balance="Rainbow Riches Bingo Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Bingo</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                                <AmountByAccountType gbp="250" balance="Rainbow Riches Bonus">
+                                    <GameCategories>
+                                        <GameCategory>Slots</GameCategory>
+                                    </GameCategories>
+                                </AmountByAccountType>
+                            </AmountBreakdown>
+                        </FeaturePrize>
+                        <FeaturePrize feature="2 To Go" rank="0">
+                            <Amount gbp="1500"/>
+                        </FeaturePrize>
+                        <Total gbp="6500"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="10833" mxn="162500" eur="8667" gbp="6500" dkk="54167" cad="10833" usd="8667" sek="75833" pen="26000" nok="65000" brl="26000" priceIndex="0"/>
+                    </PrizeTotals>
+                    <Features>
+                        <Feature feature="Rainbow Riches Bingo" featureType="GAMEVARIANT" variantType="Rainbow Riches Bingo"/>
+                        <Feature feature="Wishing Well" featureType="GAMEVARIANT" variantType="Rainbow Riches Bingo"/>
+                        <Feature feature="2 To Go" featureType="GAMEPRIZE"/>
+                    </Features>
+                    <FeatureStates>
+                        <FeatureState id="Rainbow Riches Bingo">
+                            <Param key="maxPosition" value="50"/>
+                            <Param key="currentPosition" value="12"/>
+                            <Param key="nextPrize" value="Silver"/>
+                            <Param key="progressiveTokens" value="41,42"/>
+                            <Param key="jackpotFeatureType" value="ROLLOVER"/>
+                            <Param key="jackpotRolloverPercentage" value="0.5"/>
+                            <Param key="ProgressiveTokenMatchType" value="MATCH_TOKENS"/>
+                            <Param key="ProgressiveTokenProgressType" value="COUNT_MATCHES"/>
+                            <Param key="prizeNames" value="Bronze,Silver,Gold"/>
+                            <Param key="prizeTargets" value="10,25,50"/>
+                        </FeatureState>
+                    </FeatureStates>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="RR Bingo Gala Coral" gameType="Rainbow Riches Bingo">
+                <Jackpot type="FEATURE" community="true" id="8246" configID="253003" incrementType="SCROLLING" displayVersion="1" displayID="8246:253003:Rainbow Riches Jackpot-NW" autoPayment="true" totalJackpotAmount="0" allocationID="1" active="false" featureID="Rainbow Riches Bingo" amount="0" currency="GBP" name="Rainbow Riches Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" prize="Bronze" target="10" type="MAIN"/>
+                        <JackpotTrigger numberOfTickets="1" prize="Bronze" target="10" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="true" id="8246" configID="253003" incrementType="SCROLLING" displayVersion="1" displayID="8246:253003:Rainbow Riches Jackpot-NW" autoPayment="true" totalJackpotAmount="10727" allocationID="2" active="true" featureID="Rainbow Riches Bingo" amount="10727" currency="GBP" name="Rainbow Riches Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" prize="Silver" target="25" type="MAIN"/>
+                        <JackpotTrigger numberOfTickets="1" prize="Silver" target="25" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+                <Jackpot type="FEATURE" community="true" id="8246" configID="253003" incrementType="SCROLLING" displayVersion="1" displayID="8246:253003:Rainbow Riches Jackpot-NW" autoPayment="true" totalJackpotAmount="21455" allocationID="3" active="true" featureID="Rainbow Riches Bingo" amount="21455" currency="GBP" name="Rainbow Riches Jackpot">
+                    <JackpotTriggers>
+                        <JackpotTrigger numberOfTickets="1" prize="Gold" target="50" type="MAIN"/>
+                        <JackpotTrigger numberOfTickets="1" prize="Gold" target="50" type="COMMUNITY"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Royal" defaultRoom="false" displayName="Royal" gameType="Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Royal" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/royal.png" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="Royal" gameType="Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="1118" configID="206" incrementType="SCROLLING" displayVersion="1" displayID="Gala Cash Climber JP" autoPayment="true" totalJackpotAmount="799440" active="true" amount="799440" currency="GBP" name="Cash Climber">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="32" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="Rush" defaultRoom="false" displayName="Rush" gameType="Speed Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="Rush" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/rush.png" tabs="667,668" featurePriorityInTabs="0,0">
+            <JackpotUpdate gameName="Rush" gameType="Speed Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="333" configID="13" incrementType="NIGHTLY" displayVersion="1" displayID="333:13:Energiser" autoPayment="true" totalJackpotAmount="1795706" active="true" amount="1795706" currency="GBP" name="Energiser">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="31" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="The Chase Bingo" defaultRoom="false" displayName="The Chase Bingo" gameType="The Chase Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="The Chase Bingo" tabs="667,668" featurePriorityInTabs="3,4">
+            <JackpotUpdate gameName="The Chase Bingo" gameType="The Chase Bingo">
+                <Jackpot type="PROGRESSIVE" community="false" id="8051" configID="13" incrementType="SCROLLING" displayVersion="1" displayID="8051:13:The Final Chase" autoPayment="true" totalJackpotAmount="2937442" active="true" amount="2937442" currency="GBP" name="The Final Chase">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" threshold="31" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+        <Game name="The Newbie Room" defaultRoom="false" displayName="The Newbie Room" gameType="Bingo" language="en" currency="GBP" available="false" hasSchedule="true" displayKey="The Newbie Room" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/newbie.png" tabs="667,668" featurePriorityInTabs="0,0">
+            <NoAccess/>
+        </Game>
+        <Game name="Velocity" defaultRoom="false" displayName="Velocity" gameType="Speed Bingo" language="en" currency="GBP" hasSchedule="true" displayKey="Velocity" lobbyIconURL="https://qa-galabingo.static.virtuefusion.com/roomicons/velocity.png" cashStakesOnly="false" tabs="667,668" featurePriorityInTabs="0,0">
+            <State>
+                <BingoGame type="link" gameplayid="22383451777" timeleft="69" drawTime="2017-01-19T16:12:06Z" currency="GBP" cardprice="2" freeratio="1" stripPurchaseOnly="false" variantType="Speed Bingo" callRate="1250" callRateCategory="Speed" winAnimationDuration="2000" adminPurchaseOnly="false" numofusers="0" numOfBettingUsers="0" prizestotal="1500" maxcards="36" mincards="1" ticketname="3-2-1 Go" lastGame="false">
+                    <CardPrices defaultPriceIndex="0">
+                        <CardPrice gbp="2" priceIndex="0" priceOrder="0"/>
+                    </CardPrices>
+                    <Prizes priceIndex="0">
+                        <Prize id="1" key="1Line" ordinal="1">
+                            <Amount gbp="250"/>
+                            <SplitAmount gbp="250"/>
+                        </Prize>
+                        <Prize id="2" key="2Line" ordinal="1">
+                            <Amount gbp="500"/>
+                            <SplitAmount gbp="500"/>
+                        </Prize>
+                        <Prize id="3" key="House" ordinal="1">
+                            <Amount gbp="750"/>
+                            <SplitAmount gbp="750"/>
+                        </Prize>
+                        <Total gbp="1500"/>
+                    </Prizes>
+                    <PrizeTotals>
+                        <PrizeTotal aud="2250" mxn="37500" eur="1500" gbp="1500" dkk="15000" cad="2250" usd="1500" sek="15000" pen="6000" nok="15000" brl="6750" priceIndex="0"/>
+                    </PrizeTotals>
+                </BingoGame>
+            </State>
+            <JackpotUpdate gameName="Velocity" gameType="Speed Bingo">
+                <Jackpot type="PROGRESSIVE" community="true" id="45" configID="150" incrementType="NIGHTLY" displayVersion="1" displayID="45:150:The Ultimate" autoPayment="true" totalJackpotAmount="3504594" active="true" amount="3504594" currency="GBP" name="The Ultimate">
+                    <JackpotTriggers>
+                        <JackpotTrigger mincardprice="1" numberOfTickets="1" threshold="29" type="COMMUNITY"/>
+                        <JackpotTrigger mincardprice="1" threshold="29" type="MAIN"/>
+                    </JackpotTriggers>
+                </Jackpot>
+            </JackpotUpdate>
+        </Game>
+    </UpdateLobby>
+</Response>
