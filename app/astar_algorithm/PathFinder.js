@@ -3,7 +3,7 @@ function PathFinder(col, cells) {
     this.col = col;
 
     /**
-     * hold all cell which have not been fully eveluated
+     * hold all cell which have not been fully evaluated
      * @type {Array}
      */
 
@@ -19,7 +19,6 @@ function PathFinder(col, cells) {
     this.removeFromArray = function (arr, element) {
         for (var i = arr.length - 1; i >= 0; i--) {
             if (arr[i] == element) {
-                console.log("Remove");
                 arr.splice(i, 1);
             }
         }
@@ -50,10 +49,10 @@ function PathFinder(col, cells) {
     this.findEachNeighbours = function () {
         for (var i = 0; i < this.cells.length; i++) {
             var currentCell = this.cells[i];
-            var northNeighbour = this.index(currentCell.x, currentCell.y - 1);
-            var easeNeighbour = this.index(currentCell.x, currentCell.y + 1);
-            var southNeighbour = this.index(currentCell.x + 1, currentCell.y);
-            var westNeighbour = this.index(currentCell.x - 1, currentCell.y);
+            var northNeighbour  = this.index(currentCell.x, currentCell.y - 1);
+            var easeNeighbour   = this.index(currentCell.x, currentCell.y + 1);
+            var southNeighbour  = this.index(currentCell.x + 1, currentCell.y);
+            var westNeighbour   = this.index(currentCell.x - 1, currentCell.y);
 
             if (northNeighbour > 0 && currentCell.wallStatus[0] == false) {
                 this.cells[i].neighbours.push(this.cells[northNeighbour])
@@ -73,11 +72,10 @@ function PathFinder(col, cells) {
 
     this.findPath = function (x, y, targetX,targetY) {
         var currentCell = this.cells[this.index(x, y)];
-
         var endCell = this.cells[this.index(targetX, targetY)];
-        console.log("end", endCell);
 
         this.openSet.push(currentCell);
+
         while (this.openSet.length > 0) {
 
             if (this.openSet.length > 0) {

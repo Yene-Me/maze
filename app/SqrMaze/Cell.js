@@ -22,6 +22,8 @@ function Cell(id, x, y, h, w, col) {
     this.wallStatus = [true, true, true, true];
 
     this.visited = false;
+    
+    this.vistCount = 0;
 
     this.walls =
     {

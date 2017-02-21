@@ -3,33 +3,33 @@ import HexMazeGenerator from './HexMaze/HexMazeGenerator';
 import Hex3D from './HexMaze/Hex3D';
 
 
-/*let sqrMazeGenerator = new SqrMazeGenerator();
+let sqrMazeGenerator = new SqrMazeGenerator();
 
     sqrMazeGenerator.createCell();
     sqrMazeGenerator.createMaze();
-    sqrMazeGenerator.startAI();*/
+    sqrMazeGenerator.startAI();
 
-let hexMazeGenerator = new HexMazeGenerator();
+/*let hexMazeGenerator = new HexMazeGenerator();
     //hexMazeGenerator.createHexGrid(1);
     //hexMazeGenerator.drawHexGrid(9,100,120);
     //hexMazeGenerator.drawHexGrid(10,80,152);
     //hexMazeGenerator.drawHexGrid(9,100,185);
 
 let hex3d = new Hex3D();
-
+var slice = Math.PI/11;
 for(let index = 1 ; index < 11 ; index++)
 {
-    let hex1 = hex3d.init(hexMazeGenerator.createHexGrid(40), -40*index,0);
+    let hex1 = hex3d.init(hexMazeGenerator.createHexGrid(40), slice*index*80,0);
     let angle = hex1[index].myAngle;
-        hex3d.animate(hex1, Math.cos(angle) * 400);
+        hex3d.animate(hex1, Math.cos(angle) * 200);
 }
 
 for(let index = 0 ; index < 11 ; index++)
 {
-    let hex1 = hex3d.init(hexMazeGenerator.createHexGrid(40), 40*index,0);
+    let hex1 = hex3d.init(hexMazeGenerator.createHexGrid(40), (slice*index*80)*-1,0);
     let angle = hex1[index].myAngle;
-    hex3d.animate(hex1, Math.cos(angle) * 400);
-}
+    hex3d.animate(hex1, Math.cos(angle) * 200);
+}*/
 
 
 

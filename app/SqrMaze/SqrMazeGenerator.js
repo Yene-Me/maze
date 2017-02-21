@@ -12,8 +12,8 @@ let stack = [];
 
 
 let player = {
-    x: 10*w,
-    y: 10*w,
+    x: 20*w,
+    y: 20*w,
     size: w
 };
 
@@ -51,14 +51,21 @@ export default class SqrMazeGenerator {
         do {
             counter++;
             context.clearRect(0, 0, 290, 290);
-
-            currentCell.visited = true;
+            currentCell.vistCount++;
+            if(  currentCell.vistCount > 2)
+            {
+                currentCell.visited = true;
+            }
 
             next = currentCell.checkNeighbors(grids);
 
             if (next) {
 
-                next.visited = true;
+                next.vistCount++;
+                if(  next.vistCount > 2)
+                {
+                    next.visited = true;
+                }
 
                 // STEP 2
                 stack.push(currentCell);
@@ -93,7 +100,7 @@ export default class SqrMazeGenerator {
         let item = new PathFinder(canvasSize, grids);
         item.findEachNeighbours();
 
-        let pathLastStop = item.findPath(10, 5, 1, 10);
+        let pathLastStop = item.findPath(0, 0, 20, 20);
         this.buildPath(pathLastStop);
         this.drawMaze();
     }
@@ -143,15 +150,15 @@ export default class SqrMazeGenerator {
             context.rect(player.x, player.y, player.size, player.size);
             context.fillStyle = 'red';
             context.fill();
-            context.stroke();
+           // context.stroke();
             context.closePath();
 
 
-            context.rect(1 * player.size, 10 * player.size, player.size, player.size);
+           /* context.rect(1 * player.size, 10 * player.size, player.size, player.size);
             context.fillStyle = '#000';
             context.fill();
             context.stroke();
-            context.closePath();
+            context.closePath();*/
 
             /* context.rect(2*player.size, 10*player.size, player.size, player.size);
              context.fillStyle = '#000';
@@ -160,11 +167,7 @@ export default class SqrMazeGenerator {
              context.closePath();*/
 
 
-            context.fillStyle = 'green';
-            context.fill();
-            //context.stroke();
-            context.moveTo(item.startPoint.x, item.startPoint.y);
-            context.fillText(item.id, item.startPoint.y + 5, item.startPoint.x + 15);
+
 
             context.closePath();
             /*   context.fillStyle = 'green';
@@ -190,34 +193,40 @@ export default class SqrMazeGenerator {
             //context.fillText("F:" + item.FCost, item.startPoint.y + 40, item.startPoint.x + 15);
 
 
+            context.fillStyle = 'green';
+            context.strokeStyle = 'pink';
+            context.fill();
+            context.stroke();
+            context.moveTo(item.startPoint.x, item.startPoint.y);
+            context.fillText(item.id, item.startPoint.y + 5, item.startPoint.x + 15);
             //North
             if (item.wallStatus[0]) {
                 context.lineTo(item.walls.north.x, item.walls.north.y);
             }
 
-            context.closePath();
+           // context.closePath();
 
             context.moveTo(item.walls.north.x, item.walls.north.y);
             if (item.wallStatus[1]) {
                 context.lineTo(item.walls.west.x, item.walls.west.y);
             }
 
-            context.closePath();
+           // context.closePath();
 
             context.moveTo(item.walls.west.x, item.walls.west.y);
             if (item.wallStatus[2]) {
                 context.lineTo(item.walls.south.x, item.walls.south.y);
             }
 
-            context.closePath();
+            //context.closePath();
 
             context.moveTo(item.walls.south.x, item.walls.south.y);
             if (item.wallStatus[3]) {
                 context.lineTo(item.walls.east.x, item.walls.east.y);
             }
-            context.closePath();
-            context.fillStyle = 'red';
-            //context.fill();
+
+
+
             context.stroke();
         }
         //window.requestAnimationFrame(drawMaze);
@@ -251,7 +260,7 @@ export default class SqrMazeGenerator {
             }
 
 
-        }, 50);
+        }, 1);
     }
     
 }

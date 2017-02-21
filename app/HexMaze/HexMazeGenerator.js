@@ -16,7 +16,7 @@ export default class HexMazeGenerator {
     createHexGrid(num) {
         let hexGrid = [];
         for (var index = 0; index < num; index++) {
-            hexGrid.push(new Hex(1, 0, 0));
+            hexGrid.push(new Hex(5, 0, 0));
         }
         return hexGrid;
     }

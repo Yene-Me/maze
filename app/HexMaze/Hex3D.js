@@ -12,9 +12,9 @@ let speed = 0;
 export default  class Hex3D {
     constructor() {
         scene = new THREE.Scene();
-        camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 100, 1000);
-        camera.position.z = 600;
-        camera.position.x = 1;
+        camera = new THREE.PerspectiveCamera(1000, window.innerWidth / window.innerHeight, 100, 1000);
+        camera.position.z = 700;
+        camera.position.y = 100;
 
         renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -23,9 +23,10 @@ export default  class Hex3D {
 
 
     init(hexGrid, pointY,r) {
+
         let hexArray = [];
         let material = new THREE.LineBasicMaterial({
-            color: 0xff0000
+            color: 0x0000ff
         });
 
         for (let index = 0; index < hexGrid.length; index++) {
@@ -63,6 +64,7 @@ export default  class Hex3D {
 
 
     animate(hexArray,r) {
+       
         let that = this;
         requestAnimationFrame(function () {
             that.animate(hexArray,r);
@@ -73,7 +75,7 @@ export default  class Hex3D {
             let angle = hexArray[index].myAngle;
             hexArray[index].position.z = Math.cos(angle + speed) * r;
             hexArray[index].position.x = Math.sin(angle + speed) * r;
-            //hexArray[index].position.y += Math.sin(angle + speed) * r;
+            //hexArray[index].position.y = Math.sin(angle) * r;
         }
 
         //camera.position.y = Math.sin(new Date().getTime()/1000);
