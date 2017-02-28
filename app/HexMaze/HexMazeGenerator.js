@@ -1,7 +1,4 @@
 import Hex from '../HexMaze/Hex';
-import * as THREE from 'three';
-import Detector from 'Detector';
-
 let canvas = document.getElementById('myCanvas');
 let context = canvas.getContext('2d');
 

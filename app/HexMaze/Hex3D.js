@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import Detector from 'Detector';
+
 
 let scene, camera, renderer;
 let geometry, material, mesh, line;

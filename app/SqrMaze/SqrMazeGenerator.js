@@ -62,7 +62,7 @@ export default class SqrMazeGenerator {
             if (next) {
 
                 next.vistCount++;
-                if(  next.vistCount > 2)
+                if(  next.vistCount > 3)
                 {
                     next.visited = true;
                 }
