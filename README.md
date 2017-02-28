@@ -1,7 +1,10 @@
 # maze
 ## Synopsis
 
-Created to have fun with codes 
+Created to have fun with codes
+
+## Live Example
+https://maze-ad7b3.firebaseapp.com/
 
 ## Code Example
 
