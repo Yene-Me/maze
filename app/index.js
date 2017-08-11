@@ -7,7 +7,8 @@ let sqrMazeGenerator = new SqrMazeGenerator();
 
     sqrMazeGenerator.createCell();
     sqrMazeGenerator.createMaze();
-    sqrMazeGenerator.startAI();
+    sqrMazeGenerator.startAI(sqrMazeGenerator.pathOne);
+
 
 /*let hexMazeGenerator = new HexMazeGenerator();
     //hexMazeGenerator.createHexGrid(1);
@@ -16,6 +17,8 @@ let sqrMazeGenerator = new SqrMazeGenerator();
     //hexMazeGenerator.drawHexGrid(9,100,185);
 
 let hex3d = new Hex3D();
+
+
 var slice = Math.PI/11;
 for(let index = 1 ; index < 11 ; index++)
 {

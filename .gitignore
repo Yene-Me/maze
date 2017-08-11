@@ -58,6 +58,12 @@ build
 # Gradle:
 .idea/gradle.xml
 .idea/libraries
+.idea/markdown-navigator.xml
+.idea/jsLibraryMappings.xml
+.idea/markdown-navigator
+.idea/
+
+
 
 # Mongo Explorer plugin:
 .idea/mongoSettings.xml

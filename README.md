@@ -8,11 +8,11 @@ https://maze-ad7b3.firebaseapp.com/
 
 ## Code Example
 
-cominig soon
+coming soon
 
 ## Motivation
 
-cominig soon
+coming soon
 
 ## Installation
 
