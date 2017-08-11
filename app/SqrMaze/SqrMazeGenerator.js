@@ -57,7 +57,7 @@ export default class SqrMazeGenerator {
             counter++;
             context.clearRect(0, 0, 290, 290);
             currentCell.vistCount++;
-            if(  currentCell.vistCount > 3)
+            if(  currentCell.vistCount == 2)
             {
                 currentCell.visited = true;
             }
@@ -67,7 +67,7 @@ export default class SqrMazeGenerator {
             if (next) {
 
                 next.vistCount++;
-                if(  next.vistCount > 3)
+                if(  next.vistCount > 1)
                 {
                     next.visited = true;
                 }
@@ -102,7 +102,7 @@ export default class SqrMazeGenerator {
     buildPath(current) {
 
         this.pathOne.push(current);
-        if (current.previous) {
+        if (current && current.previous) {
             this.buildPath(current.previous)
         }
     }
@@ -116,8 +116,8 @@ export default class SqrMazeGenerator {
             a.wallStatus[3] = false;
             b.wallStatus[1] = false;
         } else if (x === -1) {
-            //a.wallStatus[1] = false;
-            //b.wallStatus[3] = false;
+            a.wallStatus[1] = false;
+            b.wallStatus[3] = false;
         }
         let y = a.y - b.y;
         if (y === 1) {

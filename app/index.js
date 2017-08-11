@@ -7,7 +7,7 @@ let sqrMazeGenerator = new SqrMazeGenerator();
 
     sqrMazeGenerator.createCell();
     sqrMazeGenerator.createMaze();
-    sqrMazeGenerator.startAI(sqrMazeGenerator.pathOne);
+    //sqrMazeGenerator.startAI(sqrMazeGenerator.pathOne);
 
 
 /*let hexMazeGenerator = new HexMazeGenerator();
