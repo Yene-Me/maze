@@ -1,86 +1,154 @@
 import * as THREE from 'three';
 
-
-let scene, camera, renderer;
-let geometry, material, mesh, line;
-
-let hexArrayPart2 = [];
-let count = 0;
-let speed = 0;
-
+let scene, camera, renderer , light;
 
 export default  class Hex3D {
-    constructor() {
+    constructor(grid) {
+        this._grid= grid;
         scene = new THREE.Scene();
-        camera = new THREE.PerspectiveCamera(1000, window.innerWidth / window.innerHeight, 100, 1000);
-        camera.position.z = 700;
-        camera.position.y = 100;
+        camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 100);
+        //camera.position.z = 10;
+        //camera.position.y = 1;
+        //camera.position.x = 0;
 
-        renderer = new THREE.WebGLRenderer();
+        camera.lookAt(scene.position);
+
+        light =  new THREE.AmbientLight( 0x404040 );
+        renderer = new THREE.WebGLRenderer({ antialias: false,alpha:true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
+
+        this.textureItems= [];
+        this.loader = new THREE.TextureLoader();
+
+        this.loadTexttureUrl = ['asset/wall.jpg', 'asset/floor.jpg','asset/floor2.jpg'];
     }
 
+    loadTextture()
+    {
+        // instantiate a loader
 
-    init(hexGrid, pointY,r) {
+        this.loader.load(
 
-        let hexArray = [];
-        let material = new THREE.LineBasicMaterial({
-            color: 0x0000ff
-        });
+            this.loadTexttureUrl[0],
 
-        for (let index = 0; index < hexGrid.length; index++) {
-            let hex = hexGrid[index].hexData();
+             ( texture ) =>{
 
-            let geometry = new THREE.Geometry();
+                this.textureItems.push(texture);
+                this.loadTexttureUrl.shift();
 
-            for (let i = 0; i < hex.length; i++) {
+                if(this.loadTexttureUrl.length != 0)
+                {
+                  this.loadTextture();
+                }else
+                    {
+                     this.init();
+                }
 
-                geometry.vertices.push(new THREE.Vector3(hex[i].pointX, hex[i].pointY, hex[i].pointY));
+            },
 
+             ( xhr ) => {
+                console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+            },
+
+             ( xhr ) => {
+                console.log( 'An error happened' , xhr);
             }
-            geometry.vertices.push(new THREE.Vector3(hex[0].pointX, hex[0].pointY, hex[0].pointY));
-
-            hexArray.push(new THREE.Line(geometry, material));
-
-        }
-
-
-        let _SLICE = Math.PI * 2 / hexArray.length;
-
-        for (let index in hexArray) {
-            let angle = index * _SLICE;
-            hexArray[index].position.x = Math.sin(angle) * r;
-            hexArray[index].position.y = pointY;
-            hexArray[index].myAngle = angle;
-            hexArray[index].position.z = Math.cos(angle) * r;
-            scene.add(hexArray[index]);
-        }
-
-        //renderer.render(scene, camera);
-        return hexArray;
-
+        );
     }
 
 
-    animate(hexArray,r) {
-       
-        let that = this;
-        requestAnimationFrame(function () {
-            that.animate(hexArray,r);
-        });
-        speed += 0.001;
-        //camera.rotation.z += 0.01;
-        for (let index in hexArray) {
-            let angle = hexArray[index].myAngle;
-            hexArray[index].position.z = Math.cos(angle + speed) * r;
-            hexArray[index].position.x = Math.sin(angle + speed) * r;
-            //hexArray[index].position.y = Math.sin(angle) * r;
+    init() {
+
+        let grid = this.createGrid(this._grid);
+
+        grid.position.set(-8,5,-20);
+        grid.rotateX(0.5);
+        scene.add(grid);
+        scene.add( light );
+        this.animate([grid]);
+    }
+
+    createGrid(grids) {
+        let grid = new THREE.Group();
+
+        let x = 0;
+        let y = 0;
+        let z = 0;
+        for (let index = 0; index < grids.length; index++) {
+            let cell = this.createCell(grids[index]);
+            cell.position.set(grids[index].x,y,grids[index].y);
+            grid.add(cell);
         }
 
-        //camera.position.y = Math.sin(new Date().getTime()/1000);
+        return grid;
+    }
+
+    createCell(cellData)
+    {
+        //console.log(cellData['wallStatus']);
+        let wallStatus = cellData['wallStatus'];
+        let cell = new THREE.Group();
+
+        if(wallStatus[0])
+        {
+            let south = this.createWall({x:0.2,y:1,z:1},{x:0,y:0,z:0}, 0xff0000, {x:0, y: Math.PI / 2 },this.textureItems[0]);
+            cell.add(south);
+        }
+        if(wallStatus[1] )
+        {
+            let west = this.createWall({x:0.2,y:1,z:1},{x:0.5,y:0,z:0.5}, 0x00ff00, {x:0, y:Math.PI},this.textureItems[0]);
+            cell.add(west);
+        }
+        if(wallStatus[3])
+        {
+            let east = this.createWall({x:0.2,y:1,z:1},{x:-0.5,y:0,z:0.5}, 0x0000ff, {x:0, y:0},this.textureItems[0]);
+            cell.add(east);
+        }
+        if(wallStatus[2])
+        {
+            let north= this.createWall({x:0.2,y:1,z:1},{x:0.0,y:0,z:1}, 0xffffff, {x:0, y:Math.PI/2},this.textureItems[0]);
+            cell.add(north);
+        }
+
+        let floor= this.createWall({x:0,y:1,z:0.5},{x:0.0,y:-0.5,z:0.5}, 0xffffff, {x:Math.PI/2, y:Math.PI/2},this.textureItems[2]);
+        cell.add(floor);
+
+        return cell;
+
+    }
+
+    createWall(size,pos, color,rotation ,texture)
+    {
+        let geometry = new THREE.BoxGeometry( size.x, size.y, size.y);
+        let material = new THREE.MeshBasicMaterial( {
+            map: texture
+        }  );
+        let cube = new THREE.Mesh( geometry, material );
+        cube.rotateX(rotation.x);
+        cube.rotateY(rotation.y);
+
+        cube.position.set(pos.x,pos.y,pos.z);
+
+        return cube;
+    }
+
+
+    animate(cells) {
 
         renderer.render(scene, camera);
+
+        for(let item in cells)
+        {
+            //cells[item].position.set(-8,10,-20);
+            //camera.rotateY( Math.sin(0.01));
+            //cells[item].rotateY(0);
+            //cells[item].rotateX(0.02);
+        }
+
+        requestAnimationFrame(()=>{
+            this.animate(cells);
+        });
 
     }
 }

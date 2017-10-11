@@ -8,12 +8,12 @@ function Hex(r, centerX, centerY) {
 
     this.hexData = function () {
         this._hex = [];
-        for (var i = 0; i < this._NUM_OF_LINE; i += 1) {
-            var angle = i * this._SLICE;
-            var x = this._centerX + Math.sin(angle) * this._radius;
-            var y = this._centerY + Math.cos(angle) * this._radius;
-            var z = this._centerY + Math.cos(angle) * this._radius;
-            var point = {
+        for (let i = 0; i < this._NUM_OF_LINE; i += 1) {
+            let angle = i * this._SLICE;
+            let x = this._centerX + Math.sin(angle) * this._radius;
+            let y = this._centerY + Math.cos(angle) * this._radius;
+            let z = this._centerY + Math.cos(angle) * this._radius;
+            let point = {
                 pointX: x,
                 pointY: y,
                 pointZ: z
@@ -27,11 +27,11 @@ function Hex(r, centerX, centerY) {
     this.drawHex = function (context ,x, y) {
         context.save();
         context.translate(x,y);
-        for(var index = 0 ; index < this._hex.length; index++)
+        for(let index = 0 ; index < this._hex.length; index++)
         {
-            var startPoint =  this._hex[0];
-            var item = this._hex[index];
-            var next = this._hex[index+1];
+            let startPoint =  this._hex[0];
+            let item = this._hex[index];
+            let next = this._hex[index+1];
 
             context.beginPath();
             context.moveTo(item.pointX, item.pointY);

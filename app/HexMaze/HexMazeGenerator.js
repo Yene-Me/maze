@@ -6,24 +6,34 @@ let context = canvas.getContext('2d');
 
 export default class HexMazeGenerator {
 
-    constructor() {
-
+    constructor(row,col, size,paddingX, paddingY) {
+        this._hexGrid = [];
+        this._row = row;
+        this._col = col;
+        this._grid = col*row;
+        this._size = size;
+        this._offsetX = size*paddingX;
+        this._offsetY = size*paddingY;
     }
 
-    createHexGrid(num) {
-        let hexGrid = [];
-        for (var index = 0; index < num; index++) {
-            hexGrid.push(new Hex(5, 0, 0));
+    createHexGrid() {
+
+        for (var index = 0; index < this._grid; index++) {
+            this._hexGrid.push(new Hex(this._size, 0, 0));
         }
-        return hexGrid;
+    }
+
+    getHexGrid()
+    {
+        return this._hexGrid;
     }
 
 
-    drawHexGrid(num, pointx, pointy, hexGrid) {
-        for (var y = 0; y < hexGrid.length; y++) {
-            for (var x = 0; x < num; x++) {
-                hexGrid[y].hexData();
-                hexGrid[y].drawHex(context, pointx + (x * 40), pointy + (y * 45));
+    drawHexGrid(pointX, pointY) {
+        for (var y = 0; y < this._row; y++) {
+            for (var x = 0; x < this._col; x++) {
+                this._hexGrid[y].hexData();
+                this._hexGrid[y].drawHex(context, pointX + (x*this._offsetX)+(this._size), pointY + (y*this._offsetY)+(this._size*2));
             }
         }
     }

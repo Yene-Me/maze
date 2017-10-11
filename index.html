@@ -3,13 +3,26 @@
     <title>Maze</title>
    <script src="http://localhost:35729/livereload.js"></script>
     <style>
-        canvas{
+        body{
+
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7fbfc+0,d9edf2+40,add9e4+100;Blue+3D+%231 */
+            background: #f7fbfc; /* Old browsers */
+            background: -moz-linear-gradient(left, #f7fbfc 0%, #d9edf2 40%, #add9e4 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #f7fbfc 0%,#d9edf2 40%,#add9e4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=1 ); /* IE6-9 */
         }
+        canvas{
+            width: 50%;
+            height: 50%;
+        }
+
     </style>
 </head>
 <body>
-<canvas id="myCanvas" width="800" height="800" ></canvas>
-<div id="container"></div>
+<canvas id="myCanvas" width="665" height="503" style="width: 665.5px; height: 503px;"></canvas>
+
+
 <script src="bundle.js"></script>
 
 </body>

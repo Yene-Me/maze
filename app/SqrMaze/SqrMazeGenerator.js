@@ -57,7 +57,7 @@ export default class SqrMazeGenerator {
             counter++;
             context.clearRect(0, 0, 290, 290);
             currentCell.vistCount++;
-            if(  currentCell.vistCount == 2)
+            if(  currentCell.vistCount == 3)
             {
                 currentCell.visited = true;
             }
@@ -96,6 +96,8 @@ export default class SqrMazeGenerator {
         let pathLastStop = item.findPath(0, 0, 10, 10);
         this.buildPath(pathLastStop);
         this.drawMaze();
+
+        return grids;
     }
 
     
